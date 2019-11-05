@@ -1,0 +1,59 @@
+mpc-expander[type*="property"]>mpc-expander-label {
+  color: #808;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+mpc-expander[type*="property"][enumerable="false"]>mpc-expander-label {
+  opacity: 0.75;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="boolean"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="number"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-key[type*="number"] {
+  color: #008;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="string"] {
+  color: #800;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="function"] {
+  color: #222;
+  font-style: italic;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="iterable"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="placeholder"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="object"] {
+  color: #222;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="regexp"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="symbol"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-key[type="symbol"] {
+  color: #088;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-value[type*="null"] {
+  color: #888;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-key[type*="get"],
+mpc-expander[type*="property"]>mpc-expander-label mpc-property-expander-key[type*="set"] {
+  font-style: italic;
+}
+
+mpc-expander[type*="property"]>mpc-expander-label:hover {
+  background: rgba(0, 255, 128, 0.1);
+  border-radius: 3px;
+}
+
+mpc-expander[type*="property"][type*="error"]:hover {
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+mpc-expander[type*="property"][type*="error"]>mpc-expander-label {
+  color: #f00;
+}

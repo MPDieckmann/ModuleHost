@@ -1,0 +1,37 @@
+mpc-expander[type*="node"]>*:hover {
+  background: rgba(0, 128, 255, 0.1);
+  border-radius: 3px;
+}
+
+mpc-expander[type*="node"]>mpc-expander:hover {
+  background: none;
+  border-radius: none;
+}
+
+mpc-expander[type*="node"]>mpc-expander-label {
+  color: #444;
+}
+
+mpc-expander[type="element-node"]>mpc-expander-label {
+  color: #808;
+}
+
+mpc-expander[type*="node"] mpc-node-expander-text {
+  color: #000;
+}
+
+mpc-expander[type*="node"] mpc-node-expander-document-type {
+  color: #888;
+}
+
+mpc-expander[type*="node"] mpc-node-expander-attr-name {
+  color: #800;
+}
+
+mpc-expander[type*="node"] mpc-node-expander-attr-value {
+  color: #008;
+}
+
+mpc-expander[type*="node"] mpc-node-expander-comment {
+  color: #080;
+}

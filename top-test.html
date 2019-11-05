@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+
+  <!-- CodeMirror -->
+  <script src="vendor/codemirror/lib/codemirror.js" src="text/javascript"></script>
+  <link href="vendor/codemirror/lib/codemirror.css" type="text/css" rel="stylesheet" />
+  <script src="vendor/codemirror/mode/javascript/javascript.js" src="text/javascript"></script>
+  <link href="css/expander.css" type="text/css" rel="stylesheet" />
+  <link href="css/nodeexpander.css" type="text/css" rel="stylesheet" />
+  <link href="css/propertyexpander.css" type="text/css" rel="stylesheet" />
+  <link href="css/modulehost.css" type="text/css" rel="stylesheet" />
+  <link href="css/consolemodule.css" type="text/css" rel="stylesheet" />
+  <link href="css/pageviewmodule.css" type="text/css" rel="stylesheet" />
+  <script src="js/devtools.js" src="text/javascript"></script>
+</head>
+
+<body>
+  <script>
+    document.body.appendChild(new ModuleHost({
+      main: new ConsoleModule(top),
+      modules: []
+    }).element);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "extends": "tsconfig",
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": true,
+    "outFile": "../js/devtools.es5.js",
+    "target": "es5"
+  },
+  "include": [
+    "../ts/"
+  ],
+  "exclude": [
+    "../js/",
+    "../js-es5/",
+    "../devtools.js",
+    "../devtools.d.ts",
+    "../devtools.es5.js",
+    "../devtools.es5.d.ts"
+  ]
+}

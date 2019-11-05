@@ -1,0 +1,58 @@
+mpc-expander {
+  display: block;
+  position: relative;
+  font: 1em/1.25 monospace;
+  cursor: default;
+}
+
+mpc-expander[expandable]::before {
+  content: "\25B6";
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+  font-size: 0.75em;
+  display: block;
+}
+
+mpc-expander>mpc-expander[expandable]::before {
+  left: 1.5em;
+}
+
+mpc-expander>mpc-expander {
+  background: none;
+}
+
+mpc-expander>mpc-expander-label:first-of-type {
+  min-height: 1.25em;
+  display: block;
+}
+
+mpc-expander>* {
+  display: none;
+  padding-left: 1em;
+}
+
+mpc-expander[type*="placeholder"]>*,
+mpc-expander[open]>* {
+  display: block;
+}
+
+mpc-expander[open]::before {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 425px) {
+  mpc-expander>mpc-expander-label {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  mpc-expander>mpc-expander-label:hover {
+    background: rgba(128, 128, 128, 0.1);
+    border-radius: 3px;
+  }
+  mpc-expander[expandable]::before {
+    top: 0.85em;
+  }
+}

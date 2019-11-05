@@ -1,0 +1,7 @@
+{
+  "name": "devtools",
+  "version": "1.0",
+  "dependencies": {
+    "@types/codemirror": "0.0.55"
+  }
+}

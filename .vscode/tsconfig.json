@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "charset": "utf-8",
+    "declaration": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "module": "amd",
+    "moduleResolution": "classic",
+    "newLine": "LF",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noLib": false,
+    "noResolve": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outFile": "../js/devtools.js",
+    "preserveConstEnums": true,
+    "preserveSymlinks": true,
+    "pretty": true,
+    "removeComments": true,
+    "rootDir": "ts/",
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "stripInternal": true,
+    "target": "esnext"
+  },
+  "include": [
+    "../ts/"
+  ],
+  "exclude": [
+    "../js/",
+    "../js-es5/",
+    "../devtools.js",
+    "../devtools.d.ts",
+    "../devtools.es5.js",
+    "../devtools.es5.d.ts"
+  ]
+}
