@@ -1,7 +1,30 @@
 {
-  "name": "devtools",
-  "version": "1.0",
-  "dependencies": {
-    "@types/codemirror": "0.0.55"
-  }
+  "name": "modulehost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "devtools.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPDieckmann/ModuleHost.git"
+  },
+  "keywords": [
+    "modulehost",
+    "module",
+    "devtools",
+    "console",
+    "javascript",
+    "mpc",
+    "typescript"
+  ],
+  "author": "MPDieckmann",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MPDieckmann/ModuleHost/issues"
+  },
+  "homepage": "https://github.com/MPDieckmann/ModuleHost#readme"
 }
